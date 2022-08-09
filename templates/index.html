@@ -1,0 +1,175 @@
+{% extends 'base.html' %} {% block title %}
+<title>Web Calculator</title>
+{% endblock %} {% block body %}
+
+
+<header>
+    <div id="header">
+        <div class="container">
+            <h1 class="text-center mt-3">Standard Calculator</h1>
+
+        </div>
+
+
+    </div>
+</header>
+
+<article>
+    <div class="container-fluid m-0">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                </div>
+                <div class="col">
+                    <div class="square mt-5" id="calculator">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col bg-light pt-5 pb-1 ">
+                                    <input type="text" class="text-end h1 container-fluid" id="result" value="0">
+                                    <!-- result of the calculator -->
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button class="col border pt-3 pb-3 highlight " onclick="">
+                                    <h2 class=" text-center highlight">%</h2>
+
+                                </button>
+                                <button class="col border pt-3 pb-3 highlight" onclick="ce()">
+                                    <h2 class=" text-center highlight">CE</h2>
+
+                                </button>
+                                <button class="col border pt-3 pb-3 highlight" onclick="clears()">
+                                    <h2 class=" text-center highlight">C</h2>
+
+                                </button>
+                                <button class="col border pt-3 pb-3 highlight" onclick="del()">
+                                    <h2 class=" text-center highlight"><-</h2>
+
+                                </button>
+
+                            </div>
+                            <div class="row">
+                                <button class="col border pt-3 pb-3 highlight " onclick="sqr()">
+                                    <h2 class=" text-center highlight">sqr()</h2>
+
+                                </button>
+                                <button class="col border pt-3 pb-3 highlight" onclick="">
+                                    <h2 class=" text-center highlight">1/x</h2>
+
+                                </button>
+                                <button class="col border pt-3 pb-3 highlight" onclick="sqrt()">
+                                    <h2 class=" text-center highlight">sqrt()</h2>
+
+                                </button>
+                                <button class="col border pt-3 pb-3 highlight" onclick="devide()">
+                                    <h2 class=" text-center highlight">/</h2>
+
+                                </button>
+
+                            </div>
+                            <div class="row">
+                                <button class="col border pt-3 pb-3 highlight " onclick="display(7)">
+                                    <h2 class=" text-center highlight">7</h2>
+
+                                </button>
+                                <button class="col border pt-3 pb-3 highlight" onclick="display(8)">
+                                    <h2 class=" text-center highlight">8</h2>
+
+                                </button>
+                                <button class="col border pt-3 pb-3 highlight" onclick="display(9)">
+                                    <h2 class=" text-center highlight">9</h2>
+
+                                </button>
+                                <button class="col border pt-3 pb-3 highlight" onclick="multiply()">
+                                    <h2 class=" text-center highlight">x</h2>
+
+                                </button>
+
+                            </div>
+                            <div class="row">
+                                <button class="col border pt-3 pb-3 highlight" onclick="display(4)">
+                                    <h2 class=" text-center highlight">4</h2>
+
+                                </button>
+                                <button class="col border pt-3 pb-3 highlight" onclick="display(5)">
+                                    <h2 class=" text-center highlight">5</h2>
+
+                                </button>
+                                <button class="col border pt-3 pb-3 highlight" onclick="display(6)">
+                                    <h2 class=" text-center highlight">6</h2>
+
+                                </button>
+                                <button class="col border pt-3 pb-3 highlight" onclick="minus()">
+                                    <h2 class=" text-center highlight">-</h2>
+
+                                </button>
+
+                            </div>
+                            <div class="row">
+                                <button class="col border pt-3 pb-3 highlight" onclick="display(1)">
+                                    <h2 class=" text-center highlight">1</h2>
+
+                                </button>
+                                <button class="col border pt-3 pb-3 highlight" onclick="display(2)">
+                                    <h2 class=" text-center highlight">2</h2>
+
+                                </button>
+                                <button class="col border pt-3 pb-3 highlight" onclick="display(3)">
+                                    <h2 class=" text-center highlight">3</h2>
+
+                                </button>
+                                <button class="col border pt-3 pb-3 highlight" onclick="plus()">
+                                    <h2 class=" text-center highlight">+</h2>
+
+                                </button>
+
+                            </div>
+                            <div class="row">
+                                <button class="col border pt-3 pb-3 highlight" onclick="clears()">
+                                    <h2 class="text-center highlight">+/-</h2>
+                                </button>
+                                <button class="col border pt-3 pb-3 highlight" onclick="display(0)">
+                                    <h2 class="text-center highlight">0</h2>
+                                </button>
+                                <button class="col border pt-3 pb-3 highlight" onclick="add_dot()">
+                                    <h2 class="text-center highlight">.</h2>
+
+                                </button>
+                                <button class="col border pt-3 pb-3 highlight" onclick="devide()">
+                                    <h2 class="text-center highlight">/</h2>
+
+                                </button>
+
+                            </div>
+                            <div class="row">
+                                <button class="col border pt-3 pb-3 highlight" onclick="calculate()">
+                                    <h2 class="text-center highlight">=</h2>
+
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+</article>
+
+
+
+
+
+{% endblock %}

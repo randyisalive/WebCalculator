@@ -1,0 +1,35 @@
+#header {
+    display: block;
+    padding: 0;
+    border-style: solid;
+    border-width: 1;
+    border-color: black;
+    background-color: #25abab;
+    height: 100px;
+}
+
+.square {
+    border-style: solid;
+    border-width: 2px;
+    width: 500px;
+    height: auto;
+}
+
+.numsquare {
+    border-style: solid;
+    width: 100px;
+    height: 100px;
+    border-color: black;
+}
+
+.highlight:hover {
+    background-color: aliceblue;
+}
+
+#result {
+    border-style: none;
+}
+
+#result:hover {
+    border-color: white;
+}
